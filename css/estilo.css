@@ -1,0 +1,513 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
+}
+
+.btn {
+    border-radius: 5px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+}
+
+.btn_roxo {
+    background-color: #C083B9;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    max-width: 250px;
+    text-align: center;
+    transition: all .5s;
+}
+
+.btn_roxo:hover,
+.btn_roxo:focus {
+    background-color: rgb(192, 156, 188);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
+    transform: translateY(-1rem);
+}
+
+.btn_roxo:active {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+    transform: translateY(-.5rem);
+}
+
+.btn_center {
+    margin: 0 auto;
+}
+
+.navegacao {
+    background-color: #674582;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .2);
+    color: rgb(254, 254, 254);
+    font-weight: boldho;
+    padding: 1.5rem;
+    position: fixed;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 99;
+}
+
+.navegacao__logo {
+    max-width: 200px;
+}
+
+.navegacao__box {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacao__itens {
+    background-color: #674582;
+    padding: 3rem 0;
+    position: absolute;
+    right: -700px;
+    text-align: center;
+    top: 85px;
+    transition: right 1s;
+    width: 100%;
+}
+
+.navegacao__itens.ativo {
+    background-color: #674582;
+    display: block;
+    padding: 3rem 0;
+    right: 0;
+    text-align: center;
+    top: 85px;
+    transition: right 1s;
+    width: 100%;
+}
+
+.navegacao__itens li>a {
+    transition: all .2s;
+}
+
+.navegacao__itens li>a:hover {
+    color: #C083B9;
+}
+
+.navegacao__menu-hamburguer img {
+    background-color: #C083B9;
+    border-radius: 5px;
+}
+
+.navegacao__nav {
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+}
+
+.navegacao__nav li {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.navegacao__redes-sociais a {
+    margin: 0 1rem;
+}
+
+header {
+    align-items: flex-end;
+    background: linear-gradient(rgba(127, 125, 125, 0.205),
+            rgba(11, 11, 11, 0.2)),
+        url(../img/rita1-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 14%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    height: 500px;
+    min-height: 80vh;
+    padding: 11rem 2rem 5rem 2rem;
+    text-align: center;
+
+}
+
+.principal__titulo {
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.principal__sub {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 2rem 0 3rem 0;
+}
+
+.rodape {
+    align-items: center;
+    background-color: #323534;
+    color: white;
+    display: flex;
+    font-size: .9rem;
+    flex-direction: column;
+    padding-top: .8rem;
+}
+
+.rodape__principal {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.rodape__principal>* {
+    margin: 1rem 0;
+}
+
+.rodape__navegacao>li {
+    font-size: 1.1rem;
+    margin: 1rem;
+}
+
+.rodape__navegacao a {
+    transition: all .5s;
+}
+
+.rodape__navegacao a:hover {
+    color: #C083B9;
+}
+
+.rodape__logo {
+    max-width: 200px;
+}
+
+.rodape__redes-sociais a {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: all .5s;
+}
+
+.rodape__redes-sociais a:hover {
+    color: #C083B9;
+}
+
+.rodape__redes-sociais img {
+    margin-right: .5rem;
+    max-width: 50px;
+}
+
+.rodape__redes-sociais span {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.rodape__cc {
+    background-color: #292A2A;
+    font-size: 1rem;
+    opacity: 0.5;
+    text-align: center;
+    width: 100%;
+}
+
+.header-personalidade {
+    align-items: flex-end;
+    background-size: cover;
+    color: white;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 0 2rem;
+}
+
+.header-personalidade__titulo {
+    font-size: 2.6rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.secao-diva {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px auto;
+    padding: 5rem 2rem;
+}
+
+.secao-diva__titulo {
+    color: #674582;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.secao-diva__titulo_esq {
+    font-family: 'El Messiri', sans-serif;
+    margin-right: center;
+}
+
+.secao-diva p {
+    color: #63458a;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.secao-diva__introducao {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Special Elite', cursive;
+}
+
+.secao-diva__foto-perfil {
+    margin: 1rem;
+    max-width: 18rem;
+}
+
+.secao-diva__citacao p {
+    border: 1px solid #63458a;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+}
+
+.secao-diva__historia {
+    align-items: center;
+    display: flex;
+    font-family: 'Special Elite', cursive;
+    flex-direction: column;
+    padding: 5rem 0;
+}
+
+.img_ivone {
+    max-width: 100%;
+}
+
+.secao-autora {
+    background-color: #e4b7e5;
+    display: flex;
+    justify-content: center;
+}
+
+.secao-autora>div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.secao-autora__foto img {
+    border-radius: 50%;
+    height: 150px;
+    max-width: 150px;
+    object-fit: cover;
+    width: 150px;
+}
+
+.secao-autora__dados {
+    color: #63458a;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+.secao-autora__dados p {
+    margin: 0;
+}
+
+.secao-autora a {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.secao-cta {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    .navegacao__itens {
+        display: flex;
+        padding: 0;
+        position: static;
+        width: auto;
+    }
+
+    .navegacao__nav {
+        margin-bottom: 0;
+    }
+
+    .navegacao__itens ul {
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navegacao__itens li {
+        font-size: 1.2rem;
+        margin: 0 .6rem;
+    }
+
+    .navegacao__menu-hamburguer {
+        display: none;
+    }
+
+    header {
+        min-height: 75vh;
+        padding: 5rem 10rem;
+        text-align: left;
+    }
+
+    .principal__titulo {
+        font-size: 2.9rem;
+    }
+
+    .principal__sub {
+        font-size: 1.8rem;
+    }
+
+    .principal__btn {
+        margin: 0;
+    }
+
+    .maravilhosas {
+        padding: 4rem 0;
+    }
+
+    .maravilhosas__box>div {
+        margin: 5rem;
+        max-width: 200px;
+    }
+
+    .maravilhosas__perfil p {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .rodape {
+        padding-top: 0;
+    }
+
+    .rodape__principal {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .rodape__logo img {
+        max-width: 250px;
+    }
+
+    .rodape__navegacao>li {
+        font-size: 1.5rem;
+        ;
+    }
+
+    .header-personalidade {
+        align-items: flex-end;
+        display: flex;
+        padding: 0 20rem;
+    }
+
+    .header-personalidade__titulo {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .principal {
+        max-width: 650px;
+    }
+
+    .secao-diva__introducao {
+        flex-direction: row;
+        margin: 3rem 0;
+    }
+
+    .secao-diva__foto-perfil {
+        margin: 0 4rem;
+        max-width: 100%;
+    }
+
+    .secao-diva p {
+        font-size: 1.7rem;
+    }
+
+    .secao-diva__citacao p {
+        font-size: 2.5rem;
+        padding: 4rem;
+    }
+
+    .secao-autora>div {
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+        text-align: left;
+    }
+
+    .secao-autora__dados {
+        margin: 0 3rem;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    .navegacao__box {
+        max-width: 80%;
+    }
+
+    header {
+        min-height: 90vh;
+    }
+
+    .navegacao__itens li {
+        margin: 0 1rem;
+        font-size: 1.5rem;
+    }
+
+    .principal {
+        max-width: 650px;
+    }
+}
